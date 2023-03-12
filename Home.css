@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/*
+used for dark background image
+background: linear-gradient(rgba(0,0,0 ,.5) ,rgba(0,0,0, 0.5)) , url('../images/8.jpg'); */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat' ,sans-serif;
+    background-color: gold; 
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    
+
+}
+
+/* #########    utilityclasses ############ */
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size:2rem;
+    padding: 2em;
+}
+.text-red{
+    color: red;
+}
+.text-light{
+    color: white;
+}
+.text-black{
+    color: black;
+}
+.text-gray{
+    color: gray;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0.5em 0;
+    text-decoration: none;
+   
+}
+.btn-primary{
+    background-color: white;
+    border-radius:10em;   
+}
+.btn-secondary{
+    border: 2px solid rgb(231, 9, 46);
+    background-color: white;
+    border-radius:1.5em;
+    color: red; 
+}
+.btn-primary:hover{
+    background-color: aqua;
+}
+.btn-secondary:hover{
+    background-color: aqua;
+}
+
+
+/* *****for header ***** */
+
+header{
+    height: 95vh;
+    background: url('images/8.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar{
+    padding: 1rem;
+    
+}
+.header .navbar .logo{
+    float: left;
+
+}
+.header .navbar ul.nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.header .navbar ul li{
+    display: inline;
+    padding: 1rem;
+    text-transform: uppercase;
+   
+}
+.header .navbar ul.nav-items li.nav-item a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    
+}
+p, ul{
+    font-size: 2rem;
+    margin-bottom: 0.5em;  
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.navbar a:link , 
+.navbar a:visited{  
+    color: white;
+}
+.navbar a:hover{
+    border-bottom: 2px solid black;
+}
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+    color: rgb(73, 214, 16);
+}
+.header-content p{
+    text-transform: uppercase; 
+}
+
+
+/* *****for section ***** */
+
+.showcase{
+    padding: 10em 0;
+    
+}
+.row{
+    height: 35em;
+    /* height: auto; */
+    background-color: #fff;
+    box-shadow: 5px 5px 20px 0px #aaa;   
+}
+.row-1{
+    margin-bottom: 10rem ;
+}
+.row-1 .img-box, .row-2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row-2 .img-box, .row-1 .text-box{
+    float: right;
+    width: 50%;   
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{  
+    height: 100%;
+    padding: 3em;
+    
+}
+.row .img-box img{
+    height: 100%;
+    width: 100%;   
+    padding: 3em;
+}
+
+.heading-title{
+    text-transform: uppercase;
+    padding:.5em;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ****features section  **** */
+
+
+
+.features{
+    margin-bottom: 10rem;
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px #726f6f;  
+}
+.box-1{
+    background-color: rgb(99, 235, 9);
+
+}
+.box-2{
+    background-color: rgb(207, 221, 16);  
+   
+}
+.box-3{
+    background-color: rgb(99, 235, 9);
+
+}
+.features .box-wrapper .box{
+    width: 33.3334%;
+    float: left;
+    text-align: center;
+    padding: 5rem;
+}
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*  ***** footer   ***** */
+
+
+.footer{
+    background: #bc0ae9;
+    text-align: center;
+    padding: .5rem;
+}
+
+.footer .social-media-links .fab{
+    padding: 1rem;
+    color: white;
+}
+.footer p.last-line{
+    margin-top: .5rem;
+}
+
+
+
+
+/* ############ media ########### */
+
+
+
+@media (max-width:320px){
+    html{
+        font-size: 2px;
+    }
+    body{
+        background-color: lightcoral;
+    }
+    .features .box-wrapper .box{
+        width: auto;
+        float: none;
+    }
+}
+@media (min-width:321px) and (max-width:500px){
+    html{
+        font-size: 3.8px;
+    }
+    .features .box-wrapper .box{
+        width: auto;
+        float: none;
+    }
+    body{
+        background-color: lightcoral;
+    }
+    .features .box-wrapper .box{
+        width: auto;
+        float: none;
+    }
+}
+@media(min-width:501px) and (max-width:768px){
+    html{
+        font-size: 5px;
+    }
+    body{
+        background-color: gold;
+    }
+}
+@media(min-width:768px) and (max-width:1080px){
+    html{
+        font-size: 7px;
+    }
+    body{
+        background-color: gold;
+    }
+}
